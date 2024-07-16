@@ -1,0 +1,75 @@
+Assignment Progress Log
+
+Date: 09/14/23
+
+Initial progress began with importing Professor's code from version 1.01.
+I made adjustments to certain map generation functions to gain better control over the placement of exits.
+The 'world' structure was introduced.
+A user input loop was added, laying the groundwork for interactive gameplay.
+Implemented functionality for character teleportation and movement.
+Incorporated edge detection to seal off exits.
+Introduced a probability factor for the spawning of Pokemarts and Pokecenters.
+
+Homework 1.03
+
+Date: 09/20/23
+
+Leveraging the codebase from version 1.02, I refactored the main program to focus on printing a single map.
+Implemented Dijkstra's algorithm for the 'hiker' character.
+Dedicated time to debug and resolve issues with the 'hiker' character.
+Added a print function to display the 'hiker' map.
+Extended Dijkstra's algorithm for the 'rivals' characters.
+Debugged issues related to Dijkstra's for 'rivals'.
+Discovered a recurring problem affecting approximately 15% of program runs.
+Expanded printing functionality to include the 'rivals' map.
+Developed the computation for both 'hiker' and 'rival' characters in the main program.
+Enhanced the main program by displaying all three maps.
+
+Homework 1.04
+
+Date: 10/01/23
+
+Building on Professor's code from version 1.03, I focused on streamlining the movement-related elements between maps.
+Established the foundational structure for in-game items, including a 'Trainer' structure and a 'Trainer' map within the global 'world'.
+Introduced various helper functions to facilitate character movement.
+Implemented a rudimentary character movement system, albeit with some issues and a lack of previous character deletion.
+Acknowledged the presence of several bugs that require further attention but succeeded in achieving basic character movement.
+
+Date: 10/07/23
+
+Refined the functions responsible for determining the next logical step for characters.
+Dedicated extensive debugging efforts to resolve issues that previously resulted in trailing characters.
+Overhauled the character structure by introducing the 'cost' variable, a 'direction,' and a 'type' variable.
+Added a display control variable, contributing to a smoother gameplay experience.
+Invested considerable effort in debugging and fine-tuning various elements.
+Revamped the logic governing character interactions with walls, implementing error detection on all sides during movement.
+Despite significant progress, a perplexing issue persists: when a character moves away and subsequently returns to its original position, it becomes stuck, preventing further movement. Debugging efforts have been inconclusive, leaving me in a state of frustration and puzzlement.
+
+Homework 1.05
+
+Date: 10/11/23
+
+Transitioned from version 1.04 of Professor's code.
+Incorporated the 'ncurses' library for enhanced text-based UI.
+Updated the map printing functionality to utilize 'ncurses.'
+Introduced basic input handling for user interaction.
+Developed function prototypes for displaying various in-game elements.
+Initiated work on player character (PC) movement, although it remains somewhat flawed.
+
+Date: 10/18/23
+
+Further expanded on PC movement, ensuring that distance maps update correctly as the PC moves.
+Implemented collision detection for Pokemarts and Pokecenters.
+Enabled users to "enter" battles, marts, and centers.
+Implemented functionality to erase defeated enemies post-battle.
+Introduced a menu for trainers, making it easier for users to track their progress.
+Recognized the absence of inter-map movement capabilities. Unfortunately, characters cannot transition between maps at this stage.
+The only notable issue, which is more of a limitation, is the inability to move between maps directly.
+
+Homework 1.06
+
+Date: 10/24/23
+
+
+
+Date: 10/27/23

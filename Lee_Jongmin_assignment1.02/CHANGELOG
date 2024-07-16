@@ -1,0 +1,18 @@
+
+
+Sep. 14 Reviewed all of professor's code and tried to understand. Set blueprint which part should I work and change.
+
+sep. 15 I realized I need first neeed function that generates universe not just one map. So I worked on that first.
+        Then moved onto travel function that allowes us to move each map.
+
+sep. 16 added function that no longer exit on end of the universe. 
+        added possibility of spawn that goes down when you go further from center. 
+        Fixed small bugs that not allowed me to compile.
+        after fixed bugs now it's not able to run. segment fault error popped up so I worked on that part to fix
+        put several break points by using gdb but don't know where it's making segmentation fault error.
+
+sep. 17 continued to work on segmentation fault error but not much progress changed.
+        I found out that when runing main function at line 907 "print_map(u.universe[u.curY][u.curX]);"
+        it goes to line 750 which is actual print_map function and then it terminated. It was saying "Program terminated with signal SIGSEGV, Segmentation fault."
+        I worked whole day to find where bug is happening and found it but don't know what should I do next since segmentation fault error is quite broad and it's time to submit my work.
+

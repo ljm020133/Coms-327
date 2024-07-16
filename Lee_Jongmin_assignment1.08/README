@@ -1,0 +1,37 @@
+**Introduction**
+This README provides an overview of the key functionalities and development process for the assignment.
+
+
+Main Functions:
+
+1. poke_check()
+
+2. get_moves()
+
+Usage:
+    make
+    ./poke327
+
+
+For this assignment, I extended the professor's code from version 1.06 and implemented the following features
+
+Pokémon Spawning Mechanism:
+Added a 10% chance of spawning a Pokémon each time the player character enters a grass biome within the game loop.
+
+Random Attribute Generation:
+Generated Pokémon ID, gender, shiny status, and level randomly upon spawning.
+
+Level Calculation:
+Calculated Pokémon levels based on the distance between the player character and the spawned Pokémon.
+
+Individual Values (IVs):
+Assigned random IV values for each stat to enhance the uniqueness of each Pokémon.
+
+Stats Parsing:
+Parsed the stats file to obtain base stats for each Pokémon. This process involved a simple iteration through the stat array to find the matching Pokémon ID.
+
+Moveset Retrieval:
+Fetched the Pokémon's moveset according to the assignment guidelines, which involved obtaining a vector of possible move IDs and selecting two random moves.
+
+Data Presentation:
+Displayed Pokémon information in a user-friendly format to the player.

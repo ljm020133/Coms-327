@@ -1,0 +1,39 @@
+Main Functions:
+
+    -init_trainers()
+    -updateTrainerState()
+
+Usage:
+
+    1. Compile the program using the make command.
+    2. Run the program with the following command: ./poke327 [seed] [--numtrainers <NUM>]
+
+For this project, I began with the professor's code from version 1.03 as my starting point. 
+After adding argument parsing functionality, I established the overall architecture, including 
+the data structures for trainers and other essential components.
+
+One of the core functions I implemented is 'init_trainers'. 
+This function takes the number of trainers as an argument and strategically places them on the map, 
+ensuring their positions are valid.  Once all trainers are properly placed, I focused on developing 
+the logic for moving them. To achieve this, I introduced the 'updateTrainerState'.
+
+'updateTrainerState' is a key function that determines the next position for each 
+trainer based on its type and current state. It calculates various aspects, such as when to 
+move, the associated movement cost, the destination, and how to handle collisions. This
+function effectively manages the movement of trainers within the game.
+
+I also created a 'print_Trainers' function primarily for debugging purposes. It allows me to 
+visualize the current state of trainers during development and testing.
+
+The movement flow within the program operates as follows:
+
+    1. The heap is populated with trainers.
+    2. While the game is running (in an infinite loop):
+        The trainer with the minimum cost is dequeued from the heap.
+            The next movement (including the associated cost) is calculated.
+            The trainer's position pointer is updated.
+            A copy of the updated trainer struct is placed on the trainer map.
+            The previous trainer's display status is set to "not displayed" to prevent duplicates.
+            The updated trainer is inserted back into the heap for further processing.
+    
+ Additionally, there is currently no implemented logic for what should happen when hikers or rivals reach the PC; they simply continue to move around near it without further action.

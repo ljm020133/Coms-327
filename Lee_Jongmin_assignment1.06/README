@@ -1,0 +1,24 @@
+Primary Functions:
+    This update introduces a new parser.cpp file with its own functionality.
+
+Usage:
+    - For the C++ version of Poke, use the following commands:
+    - Compile: make
+    - Run: ./poke327
+
+- **To test the parsing functionality, use the following commands:**
+    - Compile: `make parser`
+    - Run: `./parser <filename>`   
+
+    For this assignment, I began with the professor's code from version 1.05 and expanded upon it. 
+    Initially, my aim was to convert it to C++, but I encountered difficulties with type casting. 
+    However, once I resolved this issue, the conversion became straightforward. 
+    Nevertheless, I decided to create a separate parser file with its own main function since the original code would not compile without the type casting working correctly. 
+    This allowed me to focus on getting the parser to work, parsing each line, and storing the relevant data in separate class variables based on the selected file. 
+    This effort left me with limited time to complete the conversion and integrate the standalone parser file with the poke327 code. 
+    Both components work independently, but they are yet to be merged as intended. 
+    I hope this won't pose a significant issue. In the C++ conversion, changing static structs to classes was fairly simple. 
+    The most time-consuming part was dealing with typecasts, primarily on the "malloc" calls, where the compiler provided clear guidance on the necessary casts. 
+
+Known Issues:
+    Currently, there are no known bugs. However, it's important to note that the parser and poke327 are separate files, requiring separate compilation and arguments. We hope the TA grading this assignment understands the situation. 

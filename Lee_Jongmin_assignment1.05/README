@@ -1,0 +1,37 @@
+README
+    main functions:
+
+    game_loop()
+    move_player()
+    look_and_act()
+    enter_battle()
+    enter_mart()
+    enter_center()
+    menu()
+
+    Use: 
+
+        make
+        ./poke327
+
+
+To kickstart this project, I utilized Professor's code from version 1.04 as the foundation.
+This assignment presented a unique challenge, as I ventured into the realm of curses programming, which was entirely new to me.
+After acclimating to the curses library's infrastructure, the task became more manageable.
+The core functionality is now encapsulated within the game_loop() from version 1.04.
+However, I've introduced real-time input gathering, making users interactively control the game's protagonist.
+Each time the game loop iterates, it collects user input for character movement and actions.
+NPC movement logic remains almost identical, with slight modifications to check for trainer defeats.
+When it's the player's turn to move, the input is passed to the move_player function. This function handles character movement without extensive error checking.
+Post-movement, the code checks the current square for various collisions and interactions, which are managed in the look_and_act() function.
+This function encompasses the game's logic for entering battles, Pokemarts, or Pokecenters, as well as collision detection for the player character (PC).
+In the case of a collision, the user is gracefully returned to the previous square without any disruptive errors.
+The various enter_ functions and the menu keep the user within specified areas of the game until they choose to return to the main game by pressing the escape key.
+This encapsulates the fundamental workings of the program. While not all the planned features have been fully realized, the known bugs are itemized below for transparency and further development.
+
+Known Bugs:
+
+Lack of logic for transitioning between maps.
+Initially, the PC must be moved to trigger the appearance of all NPCs. Thus, if the user enters the menu right away, no trainers will be listed.
+Trainers cannot initiate battles as intended. The implementation for this feature remains incomplete. However, users can engage in battles by walking into trainers, defeating them, and removing them from the game's heap and map.
+When users input a different character not defined in the set, the PC's cost remains unchanged. Occasionally, other NPCs may move ahead of the PC if they share the same cost. This behavior arises because characters with equivalent costs may occasionally take precedence over the PC.

@@ -1,0 +1,36 @@
+Project Overview:
+
+For this assignment, I started with the professor's code and expanded upon it. The core structure involves each "instance" having its own function, persisting until a decision is made or the user opts to return using the escape key.
+
+Design Approach:
+
+    Hierarchy of Battles:
+
+        Each level of a battle delves one layer deeper.
+        Decisions can be made at each level, and users can backtrack with no penalty or proceed deeper.
+
+    Function Organization:
+
+        Primary development concentrated in io.cpp.
+        Key functions, such as io_battle() and io_encounter_pokemon(), serve as foundations.
+        Refer to these functions and navigate through respective calls for detailed code exploration.
+
+    Known Bugs:
+
+        No significant known bugs; any ambiguity should be clarified through the UI.
+        User actions, such as using a potion or revive, do not consume a turn, while switching or failing an escape does. This behavior may be intentional.
+
+    Exploring the Code:
+
+        Start with io.cpp and explore subsequent calls for a comprehensive understanding of the source code structure.
+        Each function serves a specific purpose, contributing to the overall functionality and user experience.
+
+    Note:
+
+        While there are no known bugs, if any arise, the UI is designed to provide clarity.
+        The behavior related to turns and user actions is intentional unless stated otherwise.
+
+    Next Steps:
+
+        Continuous improvement and refinement based on user feedback.
+        Further exploration of potential features or enhancements for an enriched gameplay experience.

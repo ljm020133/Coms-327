@@ -1,0 +1,36 @@
+Poke327.c
+
+I decided to work on professor's code insetead working on my code since my code was messy.
+I added initializeUniverse, randGen, possibility, noExit, new_map, place_pokemart, place_pokecenter(both mart and center 
+added possibility of spawn), and main function mostly. I worked whole day to find where bug is happening and found it 
+but don't know what should I do next and it's time to submit my work. This is really frustrating. If you find what's causing
+segmentation fault bug please let me know and tell me how can I fix it will be appriciated.
+
+Data Structures:
+
+      path_t: A structure representing a path on the map.
+      map_t: A structure representing the map itself, including terrain types and heights.
+      uni_t: A structure representing a universe of maps.
+      queue_node_t: A structure representing nodes in a queue.
+      Various other data structures for storing and manipulating map data.
+
+Functions:
+
+      initializeUniverse: Initializes a universe structure.
+      dijkstra_path: Performs Dijkstra's algorithm to find a path on the map.
+      build_paths: Builds paths on the map using Dijkstra's algorithm.
+      smooth_height: Smoothes the height map of the terrain.
+      randGen: Generates a random number within a given bound.
+      possibility: Computes a probability value based on the current position.
+      find_building_location: Finds a suitable location for a building on the map.
+      place_pokemart: Places a Pokémon Mart on the map based on probability.
+      place_center: Places a center on the map based on probability.
+      border_type: Chooses a terrain type for a border cell based on neighboring cells.
+      map_terrain: Generates the terrain of the map.
+      place_boulders: Places boulders on the map.
+      place_trees: Places trees on the map.
+      new_map: Generates a new map with terrain, paths, buildings, etc.
+
+Constants:
+
+      Various constants such as map dimensions, minimum tree and boulder counts, probabilities, and Gaussian smoothing values.

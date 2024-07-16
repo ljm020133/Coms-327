@@ -1,0 +1,182 @@
+Assignment Progress Log
+
+Date: 09/14/23
+
+Initial progress began with importing Professor's code from version 1.01.
+I made adjustments to certain map generation functions to gain better control over the placement of exits.
+The 'world' structure was introduced.
+A user input loop was added, laying the groundwork for interactive gameplay.
+Implemented functionality for character teleportation and movement.
+Incorporated edge detection to seal off exits.
+Introduced a probability factor for the spawning of Pokemarts and Pokecenters.
+
+Homework 1.03
+
+Date: 09/20/23
+
+Leveraging the codebase from version 1.02, I refactored the main program to focus on printing a single map.
+Implemented Dijkstra's algorithm for the 'hiker' character.
+Dedicated time to debug and resolve issues with the 'hiker' character.
+Added a print function to display the 'hiker' map.
+Extended Dijkstra's algorithm for the 'rivals' characters.
+Debugged issues related to Dijkstra's for 'rivals'.
+Discovered a recurring problem affecting approximately 15% of program runs.
+Expanded printing functionality to include the 'rivals' map.
+Developed the computation for both 'hiker' and 'rival' characters in the main program.
+Enhanced the main program by displaying all three maps.
+
+Homework 1.04
+
+Date: 10/01/23
+
+Building on Professor's code from version 1.03, I focused on streamlining the movement-related elements between maps.
+Established the foundational structure for in-game items, including a 'Trainer' structure and a 'Trainer' map within the global 'world'.
+Introduced various helper functions to facilitate character movement.
+Implemented a rudimentary character movement system, albeit with some issues and a lack of previous character deletion.
+Acknowledged the presence of several bugs that require further attention but succeeded in achieving basic character movement.
+
+Date: 10/07/23
+
+Refined the functions responsible for determining the next logical step for characters.
+Dedicated extensive debugging efforts to resolve issues that previously resulted in trailing characters.
+Overhauled the character structure by introducing the 'cost' variable, a 'direction,' and a 'type' variable.
+Added a display control variable, contributing to a smoother gameplay experience.
+Invested considerable effort in debugging and fine-tuning various elements.
+Revamped the logic governing character interactions with walls, implementing error detection on all sides during movement.
+Despite significant progress, a perplexing issue persists: when a character moves away and subsequently returns to its original position, it becomes stuck, preventing further movement. Debugging efforts have been inconclusive, leaving me in a state of frustration and puzzlement.
+
+Homework 1.05
+
+Date: 10/11/23
+
+Transitioned from version 1.04 of Professor's code.
+Incorporated the 'ncurses' library for enhanced text-based UI.
+Updated the map printing functionality to utilize 'ncurses.'
+Introduced basic input handling for user interaction.
+Developed function prototypes for displaying various in-game elements.
+Initiated work on player character (PC) movement, although it remains somewhat flawed.
+
+Date: 10/18/23
+
+Further expanded on PC movement, ensuring that distance maps update correctly as the PC moves.
+Implemented collision detection for Pokemarts and Pokecenters.
+Enabled users to "enter" battles, marts, and centers.
+Implemented functionality to erase defeated enemies post-battle.
+Introduced a menu for trainers, making it easier for users to track their progress.
+Recognized the absence of inter-map movement capabilities. Unfortunately, characters cannot transition between maps at this stage.
+The only notable issue, which is more of a limitation, is the inability to move between maps directly.
+
+Homework 1.06
+
+Date: 10/24/23
+
+I started with code from version 1.05.
+Due to difficulties during conversion, I created a new file.
+I successfully implemented basic parsing for one file.
+This process was repeated for all filetypes.
+Ultimately, I decided to keep the files separate.
+
+Date: 10/27/23
+
+I performed error checking on the parser file, and it functions well with all file types.
+I began the conversion to C++.
+The conversion process was successfully completed, albeit a bit later than I intended due to my work schedule, which starts in 10 minutes.
+
+Homework 1.07
+
+Date: 10/30/23
+
+Implemented a system to generate Pokémon within the game world.
+Determined spawn rates for Pokémon encounters in different areas of the game.
+Designed a mechanism to calculate Pokémon levels based on the Manhattan distance from the player's location.
+Introduced the concept of shiny Pokémon and integrated it into the game's spawn mechanics.
+Incorporated gender differentiation for Pokémon in the game, where applicable.
+Added IVs for Pokémon, enhancing their individual stats and attributes.
+
+Date: 11/03/23
+
+Developed a CSV parsing function to retrieve base stats and other essential information for each Pokémon.
+Created a function to determine the possible movesets for each Pokémon species.
+Implemented a random move generator for Pokémon to diversify their movesets.
+Fetched base stats for Pokémon from the parsed CSV file, ensuring accuracy and consistency.
+Integrated IV values into the Pokémon's stats, making them unique and customizable.
+Improved the user interface by adding elements to display Pokémon information, including level, IVs, and moveset.
+
+Homework 1.08
+
+Date: 11/07/23
+
+Generated Pokémon:
+Implemented functionality to generate Pokémon dynamically.
+
+Spawn Rate:
+Defined spawn rates to control the frequency of Pokémon appearances.
+
+Level Calculation:
+Introduced level calculation based on the Manhattan distance.
+
+Shiny Status:
+Incorporated shiny status for a more diverse Pokémon experience.
+
+Gender Assignment:
+Implemented gender assignment for Pokémon.
+
+Individual Values (IVs):
+Introduced Individual Values (IVs) to add variability to Pokémon attributes.
+
+Date: 11/10/23
+
+Stat CSV Parsing:
+Successfully parsed CSV files to gather relevant statistical data.
+
+Move Set Exploration:
+Investigated potential move sets for generated Pokémon.
+
+Random Move Generation:
+Developed a system to generate random moves for Pokémon.
+
+Base Stat Integration:
+Extracted and integrated base stats from the parsed CSV file.
+
+Inclusion of IV Values:
+Expanded Pokémon attributes by adding Individual Values (IVs).
+
+User Interface Enhancement:
+Improved user experience by adding UI elements to display relevant information.
+Print functionality implemented to showcase the generated Pokémon details.
+
+Next Steps:
+Ongoing refinement of features based on feedback.
+Exploration of additional functionalities or improvements to enrich the overall Pokémon generation experience.
+Preparing for potential updates or feature expansions in the upcoming development cycles.
+
+Homework 1.09
+
+Date: 11/15/23
+
+Starter Pokémon Selection Logic:
+Successfully implemented a robust logic system allowing players to select their starter Pokémon.
+Enhanced user engagement by providing a personalized and crucial choice at the beginning of the game.
+
+CSV Parsing for Pokémon Types:
+Completed the parsing of 'pokemon_types.csv' to incorporate a comprehensive range of Pokémon types.
+This enriches the game's dynamics by introducing a variety of interactions based on type advantages and weaknesses.
+
+Pokémon Battle Logic Integration:
+Integrated intricate Pokémon battle logic, enabling dynamic and strategic battles between Pokémon.
+This pivotal addition forms the core of in-game engagements, providing players with an immersive and challenging experience.
+
+Date: 11/22/23
+
+Trainer Pokémon Generation System:
+Successfully implemented a system for generating Pokémon for in-game trainers.
+This adds depth to the game, creating diverse and challenging trainer battles for players to overcome.
+
+Trainer Battles Implementation:
+Introduced engaging trainer battles, enriching the gameplay experience with strategic encounters.
+Players can now face off against trainers, each with their own unique team, contributing to the game's narrative and difficulty progression.
+
+Debugging and Stability Improvements:
+Devoted significant effort to debugging and resolving issues encountered during the development process.
+Addressed various bugs to enhance the stability and reliability of the game system, ensuring a smoother and more enjoyable experience for players.
+

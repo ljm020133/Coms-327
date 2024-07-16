@@ -1,0 +1,23 @@
+10/1/23
+
+Utilized Professor's code from version 1.03.
+Overhauled the movement mechanics between maps.
+Set up the infrastructure for items, including the Trainer struct and global Trainer map.
+Introduced some preliminary helper functions to facilitate character movement.
+Implemented basic character movement logic.
+Identified numerous bugs that need resolution, but the characters are now moving to some extent.
+
+10/4/23
+
+Enhanced the functions responsible for determining logical next moves.
+Engaged in extensive debugging efforts to resolve issues, particularly those related to preventing a trail of characters.
+Restructured the character data structure by adding a cost variable.
+Modified the structure further by incorporating direction and type variables.
+
+10/7/23
+
+Included a display variable to determine whether to display characters.
+Conducted numerous debugging sessions.
+Adjusted the logic for character collisions with walls.
+Implemented error detection for all sides when characters attempt to move.
+Persisting bug: Characters that move away and return to their original spot get stuck, causing significant debugging frustration.
